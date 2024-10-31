@@ -250,6 +250,50 @@ Using RAG Mode
 | RAG mode not working | Ensure documents are processed |
 | Execution errors | Check dataset format |
 
+👥 Team & Contributions
+Core Team Members
+Awantika 
+
+Role: Lead UI/UX Developer & Project Manager
+Key Contributions:
+
+Overall UI/UX design and implementation
+Project architecture and planning
+Component architecture design
+Responsive design implementation
+Project management and coordination
+Code structure and organization
+Integration of shadcn/ui components
+Implementation of design system
+
+
+
+Yash
+
+Role: Lead Backend & AI Integration Developer
+Key Contributions:
+
+RAG (Retrieval Augmented Generation) implementation
+Pyodide setup and integration
+AI analysis features with GPT-4
+Document processing system
+Vector embeddings implementation
+Python runtime environment setup
+Data analysis pipeline
+Local storage management
+
+
+
+Collaboration Highlights
+
+Seamless integration between frontend and AI components
+Coordinated development of data analysis features
+Joint problem-solving for complex technical challenges
+Regular code reviews and architectural decisions
+Shared responsibility for documentation and testing
+
+
+
 ## 🤝 Contributing
 
 We welcome contributions! Please follow these steps:
@@ -304,10 +348,6 @@ We welcome contributions! Please follow these steps:
 
 - [ ] Custom Python package management
 
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## 🙏 Acknowledgments
 
 - OpenAI for GPT-4 API
@@ -319,16 +359,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Next.js team for the framework
 
 - All contributors and supporters
-
-## 💬 Support
-
-For support, questions, or feedback:
-
-- Open an issue on GitHub
-
-- Join our Discord community
-
-- Contact us at support@dataduck.com
 
 ---
 
