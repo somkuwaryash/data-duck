@@ -49,7 +49,7 @@ DataDuck is an AI-powered data analysis platform that combines the power of GPT-
 
 ```bash
 
-git clone https://github.com/yourusername/dataduck.git
+git clone https://github.com/somkuwaryash/data-duck.git
 
 cd dataduck
 
