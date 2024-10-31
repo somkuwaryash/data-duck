@@ -147,6 +147,109 @@ DataDuck follows a modular architecture:
 
 - Custom hooks for complex state logic
 
+📖 Usage Guide
+--------------
+
+### 1\. Data Analysis Interface
+
+Data Preview
+------------
+
+1.  Navigate to the `/analyze` page
+2.  The left panel shows your uploaded datasets
+3.  Click on a dataset to:
+    -   View a preview of the data
+    -   See basic dataset information
+    -   Load it for analysis
+
+AI Chat Interface
+-----------------
+
+1.  With a dataset selected, use the chat interface to analyze your data
+2.  Example queries:
+
+    plaintext
+
+    Copy
+
+    `- "Show me the basic statistics of this dataset"
+    - "Calculate the average values by category"
+    - "Create a visualization of the trends"`
+
+3.  The AI will:
+    -   Generate appropriate Python code
+    -   Execute the code automatically
+    -   Show results and visualizations
+    -   Provide explanations of the analysis
+
+Code and Console
+----------------
+
+-   View generated Python code in the Code tab
+-   See execution results in the Console
+-   Copy code snippets for reuse
+-   Clear outputs as needed
+
+### 2\. Document Management (RAG)
+
+Document Upload
+---------------
+
+1.  Go to the `/documents` page
+2.  Upload supported document types:
+    -   PDF files
+    -   Text files (.txt)
+    -   Word documents (.docx)
+3.  View uploaded documents in the document list
+
+Document Processing
+-------------------
+
+1.  Select documents for processing
+2.  Wait for embedding generation
+3.  Track processing status in the progress bar
+4.  Processed documents are ready for RAG queries
+
+Using RAG Mode
+--------------
+
+1.  Toggle RAG mode in the chat interface
+2.  Ask questions about your documents:
+
+    plaintext
+
+    Copy
+
+    `- "Summarize the key points from the documents"
+    - "What do the documents say about [specific topic]?"
+    - "Compare the information between documents"`
+
+3.  The system will:
+    -   Search relevant document sections
+    -   Generate context-aware responses
+    -   Provide source references
+
+### 💡 Tips & Best Practices
+
+1.  **Data Analysis**
+    -   Keep datasets under 100MB for optimal performance
+    -   Be specific in your questions
+    -   Use clear business metrics in queries
+    -   Save important results using the export function
+2.  **Document Analysis**
+    -   Process documents before starting RAG queries
+    -   Use focused questions for better results
+    -   Check document processing status before querying
+    -   Clear irrelevant documents to improve performance
+3.  **Troubleshooting Common Issues**
+
+| Issue | Solution |
+| --- | --- |
+| Slow data loading | Reduce dataset size |
+| Failed document processing | Try re-uploading the document |
+| RAG mode not working | Ensure documents are processed |
+| Execution errors | Check dataset format |
+
 ## 🤝 Contributing
 
 We welcome contributions! Please follow these steps:
