@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 220 12% 5%;
+    --foreground: 0 0% 100%;
+    
+    --card: 220 14% 8%;
+    --card-foreground: 0 0% 100%;
+    
+    --popover: 220 14% 8%;
+    --popover-foreground: 0 0% 100%;
+    
+    --primary: 184 100% 50%;
+    --primary-foreground: 0 0% 100%;
+    
+    --secondary: 270 100% 50%;
+    --secondary-foreground: 0 0% 100%;
+    
+    --muted: 220 15% 12%;
+    --muted-foreground: 220 10% 70%;
+    
+    --accent: 270 100% 62%;
+    --accent-foreground: 0 0% 100%;
+    
+    --destructive: 345 100% 61%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 15% 19%;
+    --input: 220 15% 19%;
+    --ring: 184 100% 50%;
+    
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  body {
+    @apply bg-background text-white;
+    background-image: radial-gradient(ellipse at top, rgba(15,240,255,0.05), transparent 50%),
+                     radial-gradient(ellipse at bottom, rgba(177,78,255,0.05), transparent 50%);
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+/* Neon text utilities */
+@layer utilities {
+  .text-glow-blue {
+    text-shadow: 0 0 10px rgba(15, 240, 255, 0.5);
+  }
+  .text-glow-purple {
+    text-shadow: 0 0 10px rgba(177, 78, 255, 0.5);
+  }
+  .text-glow-pink {
+    text-shadow: 0 0 10px rgba(255, 20, 147, 0.5);
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-background;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-accent rounded-full;
+  background: linear-gradient(to bottom, #0FF0FF, #B14EFF);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom, #B14EFF, #FF1493);
+}
+
+/* Code editor customization */
+.monaco-editor {
+  @apply rounded-lg overflow-hidden border border-border;
+  box-shadow: 0 0 20px rgba(15, 240, 255, 0.1);
+}
+
+/* Syntax highlighting with neon accents */
+.syntax-highlighter {
+  @apply bg-card !important;
+  @apply rounded-lg border border-border;
+  box-shadow: 0 0 20px rgba(177, 78, 255, 0.1);
+}
+
+/* Card hover effects */
+.hover-card-glow {
+  transition: all 0.3s ease;
+}
+
+.hover-card-glow:hover {
+  @apply shadow-neon-blue;
+  transform: translateY(-2px);
+}
