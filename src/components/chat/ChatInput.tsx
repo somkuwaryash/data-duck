@@ -38,3 +38,4 @@ export const ChatInput: React.FC<ChatInputProps> = ({ isLoading, onSubmit, place
     </form>
   );
 };
+

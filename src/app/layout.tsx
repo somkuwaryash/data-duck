@@ -18,6 +18,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <meta name="llm-profile" content="https://api.getsphere.xyz/users/686e9332618b7a2222d3ef45/profile" />
+      </head>
       <body className={`${inter.variable} font-sans bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-300`}>
         <Providers>
           <div className="flex flex-col min-h-screen">
